@@ -34,7 +34,7 @@
 
 #### Переменные окружения (БД)
 
-Файл `backend/.env`:
+Пример файла `backend/.env`:
 ```
 DB_HOST=localhost
 DB_PORT=5432
