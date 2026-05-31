@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: work-journal-db
+    environment:
+      POSTGRES_USER: journal
+      POSTGRES_PASSWORD: journal
+      POSTGRES_DB: work_journal
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
